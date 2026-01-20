@@ -3,12 +3,32 @@ package main
 import (
 	"fmt"
 
-	"github.com/yosan-aly/e-comerce/variables"
+	//"github.com/yosan-aly/e-comerce/variables"
+	"github.com/yosan-aly/e-comerce/ejercicios"
 )
 
 func main() {
-	estado, texto :=variables.CovertirATexto(123)
+	/*estado, texto := variables.CovertirATexto(123)
 
 	fmt.Println(estado)
 	fmt.Println(texto)
+	if os := runtime.GOOS; os == "Linux." || os == "OS X." {
+		fmt.Println("Sistema operativo Linux o MacOS")
+	} else if os == "windows" {
+		fmt.Println("Sistema operativo Windows")
+	}*/
+
+	numero, texto := ejercicios.Ejercicio01("101")
+
+	fmt.Println(numero)
+	fmt.Println(texto)
+
+	/*switch os := runtime.GOOS; os {
+	case "linux":
+		fmt.Println("Sistema operativo Linux")
+	case "darwin":
+		fmt.Println("Sistema operativo MacOS")
+	default:
+		fmt.Printf("%s\n", os)
+	}*/
 }
