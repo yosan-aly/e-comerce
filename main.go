@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
-
-	//"github.com/yosan-aly/e-comerce/variables"
-	"github.com/yosan-aly/e-comerce/ejercicios"
+	"github.com/yosan-aly/e-comerce/files"
+	//"github.com/yosan-aly/e-comerce/iteraciones"
 )
+
+//"github.com/yosan-aly/e-comerce/variables"
 
 func main() {
 	/*estado, texto := variables.CovertirATexto(123)
@@ -18,11 +18,6 @@ func main() {
 		fmt.Println("Sistema operativo Windows")
 	}*/
 
-	numero, texto := ejercicios.Ejercicio01("101")
-
-	fmt.Println(numero)
-	fmt.Println(texto)
-
 	/*switch os := runtime.GOOS; os {
 	case "linux":
 		fmt.Println("Sistema operativo Linux")
@@ -31,4 +26,19 @@ func main() {
 	default:
 		fmt.Printf("%s\n", os)
 	}*/
+
+	/*numero, texto := ejercicios.Ejercicio01("Hola")
+
+	fmt.Println(numero)
+	fmt.Println(texto)
+
+	teclado.IngresoNumeros()*/
+
+	//fmt.Println(ejercicios.TablaNumerica())
+
+	//files.SaveTable()
+
+	//files.SumarTable()
+
+	files.ReadFile()
 }
