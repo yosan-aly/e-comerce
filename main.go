@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/yosan-aly/e-comerce/mapas"
+	interfaces "github.com/yosan-aly/e-comerce/ejer_interfaces"
+	"github.com/yosan-aly/e-comerce/modelos"
 )
 
 
@@ -46,5 +47,13 @@ func main() {
 
 	//arrellos_slices.Capacidad()
 
-	mapas.MostrarMapas()
+	//mapas.MostrarMapas()
+
+	//users.AltaUsuario()
+	
+	yohan := new(modelos.Hombre)
+	interfaces.HumanosPensando(yohan)
+
+	sanly := new(modelos.Mujer)
+	interfaces.HumanosPensando(sanly)
 }
