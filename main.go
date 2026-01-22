@@ -1,11 +1,9 @@
 package main
 
 import (
-	"github.com/yosan-aly/e-comerce/files"
-	//"github.com/yosan-aly/e-comerce/iteraciones"
+	"github.com/yosan-aly/e-comerce/mapas"
 )
 
-//"github.com/yosan-aly/e-comerce/variables"
 
 func main() {
 	/*estado, texto := variables.CovertirATexto(123)
@@ -40,5 +38,13 @@ func main() {
 
 	//files.SumarTable()
 
-	files.ReadFile()
+	//files.ReadFile()
+
+	//funciones.Calculos()
+
+	//funciones.Exponencial(2)
+
+	//arrellos_slices.Capacidad()
+
+	mapas.MostrarMapas()
 }
