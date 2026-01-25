@@ -1,8 +1,7 @@
 package main
 
 import (
-	interfaces "github.com/yosan-aly/e-comerce/ejer_interfaces"
-	"github.com/yosan-aly/e-comerce/modelos"
+	"github.com/yosan-aly/e-comerce/defer_panic"
 )
 
 
@@ -51,9 +50,11 @@ func main() {
 
 	//users.AltaUsuario()
 	
-	yohan := new(modelos.Hombre)
+	/*yohan := new(modelos.Hombre)
 	interfaces.HumanosPensando(yohan)
 
 	sanly := new(modelos.Mujer)
-	interfaces.HumanosPensando(sanly)
+	interfaces.HumanosPensando(sanly)*/
+
+	defer_panic.EjemploPaninc()
 }
