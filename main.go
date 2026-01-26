@@ -1,7 +1,9 @@
 package main
 
 import (
-	"github.com/yosan-aly/e-comerce/defer_panic"
+	"fmt"
+
+	"github.com/yosan-aly/e-comerce/goroutines"
 )
 
 
@@ -56,5 +58,13 @@ func main() {
 	sanly := new(modelos.Mujer)
 	interfaces.HumanosPensando(sanly)*/
 
-	defer_panic.EjemploPaninc()
-}
+	//defer_panic.EjemploPaninc()
+
+	canal1 := make(chan bool)
+
+	go goroutines.MiNombreLentoooo("Yohan Aly", canal1)
+	defer func() {
+		<- canal1
+	}()
+	fmt.Println("Estoy ejecutando la función main")
+	}
