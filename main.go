@@ -1,11 +1,8 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/yosan-aly/e-comerce/goroutines"
+	"github.com/yosan-aly/e-comerce/middleware"
 )
-
 
 func main() {
 	/*estado, texto := variables.CovertirATexto(123)
@@ -51,7 +48,7 @@ func main() {
 	//mapas.MostrarMapas()
 
 	//users.AltaUsuario()
-	
+
 	/*yohan := new(modelos.Hombre)
 	interfaces.HumanosPensando(yohan)
 
@@ -60,11 +57,17 @@ func main() {
 
 	//defer_panic.EjemploPaninc()
 
-	canal1 := make(chan bool)
+	/*canal1 := make(chan bool)
 
 	go goroutines.MiNombreLentoooo("Yohan Aly", canal1)
 	defer func() {
 		<- canal1
 	}()
 	fmt.Println("Estoy ejecutando la función main")
-	}
+	}*/
+
+	//webserver.MiWebServer()
+
+	middleware.MiMiddleware()
+
+}
